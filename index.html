@@ -163,6 +163,22 @@ które często umykają w codziennym biegu.
 </div>
 
 </div>
-  
+
+<script>
+
+function openImage(img){
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightbox-img");
+
+lightbox.style.display = "flex";
+lightboxImg.src = img.src;
+}
+
+function closeImage(){
+document.getElementById("lightbox").style.display = "none";
+}
+
+</script>
+
 </body>
 </html>
