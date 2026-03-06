@@ -2,48 +2,124 @@
 <html lang="pl">
 <head>
 <meta charset="UTF-8">
-<title>Portfolio Fotografa</title>
-<link rel="stylesheet" href="style.css">
+<title>Gregorfotosy</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial, sans-serif;
+background:#f5f9ff;
+}
+
+/* Pasek u góry */
+
+header{
+background:#b9dcff;
+height:60px;
+display:flex;
+align-items:center;
+padding-left:30px;
+font-size:24px;
+font-weight:bold;
+}
+
+/* Sekcja o fotografie */
+
+.about{
+display:flex;
+padding:40px;
+gap:40px;
+align-items:center;
+}
+
+.about img{
+width:300px;
+border-radius:15px;
+}
+
+.about-text{
+max-width:500px;
+font-size:18px;
+}
+
+/* Tytuły */
+
+h2{
+text-align:center;
+margin-top:40px;
+}
+
+/* Galerie */
+
+.gallery{
+display:flex;
+justify-content:center;
+gap:20px;
+margin-top:20px;
+margin-bottom:40px;
+}
+
+.photo{
+width:250px;
+height:170px;
+background:#dfeeff;
+border-radius:15px;
+display:flex;
+align-items:center;
+justify-content:center;
+color:#666;
+}
+
+.photo img{
+width:100%;
+height:100%;
+object-fit:cover;
+border-radius:15px;
+}
+
+</style>
+
 </head>
 
 <body>
 
 <header>
-<h1>Portfolio</h1>
+Gregorfotosy
 </header>
 
-<section class="hero">
-<h2>Fotografia natury</h2>
-<p>Łapię chwile, których nie da się powtórzyć</p>
-</section>
-
 <section class="about">
-<h2>O mnie</h2>
-<p>Jestem fotografem pasjonującym się naturą i światłem.</p>
-</section>
 
-<section class="gallery">
+<img src="images/fotograf.jpg" alt="fotograf">
 
-<div class="photo hidden">
-<img src="images/1.jpg">
-</div>
-
-<div class="photo hidden">
-<img src="images/2.jpg">
-</div>
-
-<div class="photo hidden">
-<img src="images/3.jpg">
+<div class="about-text">
+Tutaj wpisz swój opis fotografa. Możesz napisać kilka zdań o sobie,
+o stylu fotografii i doświadczeniu.
 </div>
 
 </section>
 
-<section class="contact">
-<h2>Kontakt</h2>
-<p>email@email.pl</p>
-</section>
+<h2>Moje portfolio</h2>
 
-<script src="script.js"></script>
+<h2>Sesja ślubna</h2>
+
+<div class="gallery">
+
+<div class="photo"><img src="images/slub1.jpg"></div>
+<div class="photo"><img src="images/slub2.jpg"></div>
+<div class="photo"><img src="images/slub3.jpg"></div>
+
+</div>
+
+<h2>Sesja plenerowa</h2>
+
+<div class="gallery">
+
+<div class="photo"><img src="images/plener1.jpg"></div>
+<div class="photo"><img src="images/plener2.jpg"></div>
+<div class="photo"><img src="images/plener3.jpg"></div>
+
+</div>
 
 </body>
 </html>
