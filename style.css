@@ -1,49 +1,68 @@
-<!DOCTYPE html>
-<html lang="pl">
-<head>
-<meta charset="UTF-8">
-<title>Portfolio Fotografa</title>
-<link rel="stylesheet" href="style.css">
-</head>
+body{
+background:#f9f7fb;
+font-family: sans-serif;
+margin:0;
+color:#444;
+}
 
-<body>
+header{
+padding:30px;
+text-align:center;
+}
 
-<header>
-<h1>Portfolio</h1>
-</header>
+.hero{
+margin:40px;
+padding:80px;
+background:#e8dff5;
+border-radius:30px;
+text-align:center;
+}
 
-<section class="hero">
-<h2>Fotografia natury</h2>
-<p>Łapię chwile, których nie da się powtórzyć</p>
-</section>
+.about{
+margin:40px;
+padding:50px;
+background:white;
+border-radius:25px;
+box-shadow:0 10px 25px rgba(0,0,0,0.05);
+}
 
-<section class="about">
-<h2>O mnie</h2>
-<p>Jestem fotografem pasjonującym się naturą i światłem.</p>
-</section>
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+padding:40px;
+}
 
-<section class="gallery">
+.photo{
+overflow:hidden;
+border-radius:20px;
+transition:0.6s;
+}
 
-<div class="photo hidden">
-<img src="images/1.jpg">
-</div>
+.photo img{
+width:100%;
+display:block;
+}
 
-<div class="photo hidden">
-<img src="images/2.jpg">
-</div>
+.photo:hover{
+transform:scale(1.05);
+}
 
-<div class="photo hidden">
-<img src="images/3.jpg">
-</div>
+.contact{
+margin:40px;
+padding:50px;
+background:#d4f1f4;
+border-radius:30px;
+text-align:center;
+}
 
-</section>
+.hidden{
+opacity:0;
+transform:translateY(40px);
+transition:all 0.8s;
+}
 
-<section class="contact">
-<h2>Kontakt</h2>
-<p>email@email.pl</p>
-</section>
-
-<script src="script.js"></script>
-
-</body>
-</html>
+.show{
+opacity:1;
+transform:translateY(0);
+}
