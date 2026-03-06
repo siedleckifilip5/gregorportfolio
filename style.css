@@ -1,71 +1,25 @@
+/* Reset */
+
 body{
-background:#f9f7fb;
-font-family: sans-serif;
 margin:0;
-color:#444;
+font-family:Arial, sans-serif;
+background:#f4f8ff;
+color:#222;
 }
+
+/* Pasek u góry */
 
 header{
-padding:30px;
-text-align:center;
+background:#b9dcff;
+height:60px;
+display:flex;
+align-items:center;
+padding-left:30px;
+font-size:24px;
+font-weight:bold;
 }
 
-.hero{
-margin:40px;
-padding:80px;
-background:#e8dff5;
-border-radius:30px;
-text-align:center;
-}
-
-.about{
-margin:40px;
-padding:50px;
-background:white;
-border-radius:25px;
-box-shadow:0 10px 25px rgba(0,0,0,0.05);
-}
-
-.gallery{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
-padding:40px;
-}
-
-.photo{
-overflow:hidden;
-border-radius:20px;
-transition:0.6s;
-}
-
-.photo img{
-width:100%;
-display:block;
-}
-
-.photo:hover{
-transform:scale(1.05);
-}
-
-.contact{
-margin:40px;
-padding:50px;
-background:#d4f1f4;
-border-radius:30px;
-text-align:center;
-}
-
-.hidden{
-opacity:0;
-transform:translateY(40px);
-transition:all 0.8s;
-}
-
-.show{
-opacity:1;
-transform:translateY(0);
-}
+/* Sekcja o fotografie */
 
 .about{
 display:flex;
@@ -87,5 +41,36 @@ box-shadow:0 10px 25px rgba(0,0,0,0.15);
 max-width:500px;
 font-size:18px;
 line-height:1.7;
-text-align:left;
+}
+
+/* Tytuły */
+
+h2{
+text-align:center;
+margin-top:60px;
+font-size:32px;
+}
+
+/* Galerie zdjęć */
+
+.gallery{
+display:flex;
+justify-content:center;
+gap:25px;
+margin-top:30px;
+margin-bottom:60px;
+}
+
+.photo{
+width:260px;
+height:180px;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 8px 20px rgba(0,0,0,0.15);
+}
+
+.photo img{
+width:100%;
+height:100%;
+object-fit:cover;
 }
