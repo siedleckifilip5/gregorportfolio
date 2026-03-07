@@ -5,11 +5,12 @@ margin:0;
 font-family:Arial, sans-serif;
 color:#222;
 
-background:
-radial-gradient(circle at 20% 30%, #e6f2ff 0%, transparent 40%),
-radial-gradient(circle at 80% 60%, #fff8e7 0%, transparent 45%),
-radial-gradient(circle at 50% 90%, #eaf4ff 0%, transparent 40%),
-#fdfbf5;
+background-color:#fdf7e9;
+
+background-image:
+radial-gradient(circle at 15% 20%, #dceeff 0%, transparent 35%),
+radial-gradient(circle at 80% 30%, #fff3d9 0%, transparent 40%),
+radial-gradient(circle at 60% 80%, #e6f3ff 0%, transparent 35%);
 }
 
 /* Pasek u góry */
