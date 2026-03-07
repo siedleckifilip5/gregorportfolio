@@ -3,14 +3,8 @@
 body{
 margin:0;
 font-family:Arial, sans-serif;
+background:#C7C7C7;
 color:#222;
-
-background-color:#fdf7e9;
-
-background-image:
-radial-gradient(circle at 15% 20%, #dceeff 0%, transparent 35%),
-radial-gradient(circle at 80% 30%, #fff3d9 0%, transparent 40%),
-radial-gradient(circle at 60% 80%, #e6f3ff 0%, transparent 35%);
 }
 
 /* Pasek u góry */
