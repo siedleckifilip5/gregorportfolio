@@ -3,7 +3,7 @@
 body{
 margin:0;
 font-family:Arial, sans-serif;
-background:#52C8AB;
+background:#E3E3E3;
 color:#222;
 }
 
@@ -120,7 +120,7 @@ object-fit:contain;
 /* Stopka */
 
 .footer{
-background:#e7d9ff;
+background:#b9dcff;
 margin-top:80px;
 padding:60px 20px;
 }
