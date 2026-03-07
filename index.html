@@ -89,7 +89,7 @@ border-radius:15px;
 Gregorfotosy
 </header>
 
-<section class="about">
+<section class="about reveal">
 
 <img src="images/fotograf.jpg" alt="Fotograf">
 
@@ -114,7 +114,7 @@ które często umykają w codziennym biegu.
 
 <h2>Sesja ślubna</h2>
 
-<div class="gallery">
+<div class="gallery reveal">
 
 <div class="photo">
 <img src="images/slub1.jpg" onclick="openImage(this)">
@@ -132,7 +132,7 @@ które często umykają w codziennym biegu.
 
 <h2>Sesja plenerowa</h2>
 
-<div class="gallery">
+<div class="gallery reveal">
 
 <div class="photo">
 <img src="images/plener1.jpg" onclick="openImage(this)">
@@ -194,5 +194,27 @@ document.getElementById("lightbox").style.display = "none";
 
 </footer>
 
+<script>
+
+function reveal(){
+var reveals = document.querySelectorAll(".reveal");
+
+for(var i = 0; i < reveals.length; i++){
+
+var windowHeight = window.innerHeight;
+var elementTop = reveals[i].getBoundingClientRect().top;
+var elementVisible = 100;
+
+if(elementTop < windowHeight - elementVisible){
+reveals[i].classList.add("active");
+}
+
+}
+}
+
+window.addEventListener("scroll", reveal);
+
+</script>
+  
 </body>
 </html>
