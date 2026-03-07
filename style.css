@@ -201,3 +201,42 @@ transform:scale(1.15);
 background:#f2ecff;
 }
 
+/* Sekcja parallax */
+
+.parallax{
+height:350px;
+
+background-image:url("images/tlo.jpg");
+background-attachment:fixed;
+background-position:center;
+background-repeat:no-repeat;
+background-size:cover;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+position:relative;
+}
+
+/* lekkie przyciemnienie aby zdjęcie nie przeszkadzało */
+
+.parallax::before{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(255,255,255,0.65);
+}
+
+/* tekst na środku */
+
+.parallax-text{
+position:relative;
+font-size:28px;
+text-align:center;
+color:#333;
+font-weight:600;
+}
