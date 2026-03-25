@@ -199,3 +199,20 @@ window.onload = function() {
 
   
 </body>
+
+<script>
+
+function openGallery(name){
+document.getElementById("gallery-modal").style.display="flex";
+
+let sets=document.querySelectorAll(".gallery-set");
+sets.forEach(s=>s.style.display="none");
+
+document.getElementById(name).style.display="grid";
+}
+
+function closeGallery(){
+document.getElementById("gallery-modal").style.display="none";
+}
+
+</script>
